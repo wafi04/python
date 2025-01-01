@@ -4,11 +4,11 @@ def config_db():
     conn = None
     try:
         conn = psycopg2.connect(**{
-            'host': '',
-            'database': '',
-            'user': '',
-            'password': '',
-            'port': '' 
+            'host': 'localhost',
+            'database': 'python',
+            'user': 'admin',
+            'password': 'password',
+            'port': '5432' 
         })
         print("Connection Success")
         return conn
